@@ -63,7 +63,7 @@ Transform:
   m_GameObject: {fileID: 4069709752039838924}
   m_LocalRotation: {x: -0, y: -0.027427973, z: -0, w: 0.99962384}
   m_LocalPosition: {x: 0, y: 1.7199999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 6540513462221320553}
   m_RootOrder: 0
@@ -125,7 +125,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.7
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4069709752039838931
 MonoBehaviour:
@@ -186,6 +186,7 @@ GameObject:
   - component: {fileID: 4069709752803232009}
   - component: {fileID: 4069709752803232010}
   - component: {fileID: 2007117293}
+  - component: {fileID: 5726315598069523759}
   m_Layer: 0
   m_Name: Tresure
   m_TagString: Untagged
@@ -299,3 +300,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treasure: {fileID: 4069709752039838924}
   activate: 0
+--- !u!65 &5726315598069523759
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4069709752803232004}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Center: {x: 0, y: 0, z: 0}
