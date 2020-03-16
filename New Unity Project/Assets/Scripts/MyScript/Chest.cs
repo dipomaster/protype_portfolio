@@ -7,6 +7,7 @@ public class Chest : MonoBehaviour
     Animator m_Animator;
     public GameObject treasure;
     public bool activate;
+    public GameObject inGameUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +27,9 @@ public class Chest : MonoBehaviour
         {
             Debug.Log(m_Animator.name);
             m_Animator.SetTrigger("Activate");
-           
+            inGameUI.SetActive(true);
+
+
         }
     }
     private void OnTriggerStay(Collider other)
@@ -45,6 +48,7 @@ public class Chest : MonoBehaviour
             if (treasure == null)
                 m_Animator.enabled = false;
             m_Animator.ResetTrigger("Activate");
+            inGameUI.SetActive(false);
         }
     }
 

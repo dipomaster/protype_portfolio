@@ -300,6 +300,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treasure: {fileID: 4069709752039838924}
   activate: 0
+  inGameUI: {fileID: 1029113312527164091, guid: 3eb335fc522b2ae4f8a8d99ab36e4658,
+    type: 3}
 --- !u!65 &5726315598069523759
 BoxCollider:
   m_ObjectHideFlags: 0
