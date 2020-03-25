@@ -8,7 +8,7 @@ public class ending : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        endPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -20,5 +20,6 @@ public class ending : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         endPanel.SetActive(true);
+        Destroy(gameObject);
     }
 }
